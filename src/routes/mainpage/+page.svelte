@@ -3,6 +3,7 @@
   import Map from '../../component/Mainpage/Map.svelte'
   import { onMount, createEventDispatcher } from 'svelte'
   import { browser } from '$app/environment'
+  import { localStorageStore } from '../../localStorageStore.js'
   let loading = true
   let passingDataLoading = true
   let newData = []
@@ -21,6 +22,17 @@
 
   const randomStatus = () => {
     return mockStatus[Math.floor(Math.random() * mockStatus.length)]
+  }
+
+  //use localStorageStore to store data when click #each tempData as { name, distanceInKm }}
+
+  const sendDataToPage = (name) => {
+    // const dispatch = createEventDispatcher()
+    // dispatch('sendData', {
+    //   newData: event.target.value,
+    // })
+    console.log(name)
+    localStorageStore.setItem('name', name)
   }
 
   let tempData
@@ -77,8 +89,12 @@
       {#if passingDataLoading == false}
         {#each tempData as { name, distanceInKm }}
           <div class="relative flex flex-row border-b-2 mx-4 py-3">
-            <img src="location_icon.png" width="20" />
-            <div class="ml-2 font-medium">{name}</div>
+            <img src="location_icon.png" width="20" alt="location" />
+            <a
+              class="ml-2 font-medium"
+              on:click={() => sendDataToPage(name)}
+              href="/parkingpage/{name}">{name}</a
+            >
             <div class="absolute right-2">
               {distanceInKm.toFixed(2)} km
             </div>
