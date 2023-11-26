@@ -64,8 +64,8 @@
       <div>
         <input
           type="text"
-          placeholder="Search Department"
-          class="border border-gray-700 rounded-2xl px-4 py-1"
+          placeholder="Search (Coming Soon)"
+          class="border border-gray-700 rounded-2xl px-4 py-1 text-sm w-fit"
         />
       </div>
     </div>

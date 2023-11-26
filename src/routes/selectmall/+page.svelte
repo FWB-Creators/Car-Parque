@@ -9,13 +9,8 @@ console.log(show)
 </script>
 
 <Navbar />
-<<<<<<< HEAD
-<div class="flex flex-row justify-center overflow-hidden"> 
-    <img class="rounded-b-lg" src="Siam Paragon.png" alt="">
-=======
 <div class="flex flex-row justify-center overflow-hidden">
   <img class="rounded-b-lg" src=`../../{imgUrl}` alt="" />
->>>>>>> feat & fix: image banner
 </div>
 <div class="font-bold text-[40px] text-center">Paragon</div>
 
