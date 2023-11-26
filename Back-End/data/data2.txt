@@ -1,0 +1,11 @@
+Q: CarParque Feature
+A: 
+Primarily, the application aims to empower users by providing them with the capability to assess the density of vehicular flow within each shopping mall.
+
+Secondarily, the implementation of a real-time data visualization feature will serve to convey information regarding the availability of parking slots and floor occupancy within the shopping mall. This functionality has been designed with the specific purpose of enhancing the likelihood of successfully securing a parking space while concurrently optimizing the overall vehicular flow within the facility.
+
+Tertiarily, the introduction of a reservation system ensures users a designated parking slot. Non-compliance with the established rules and privacy protocols of the system may result in penalties.
+
+Subsequently, our application will incorporate an automated assistant operational 24/7, enabling users to seek information and address inquiries at their convenience.
+
+Lastly, the application will possess the capability to predict future traffic flow density, thereby assisting users in managing their plans more efficiently.
