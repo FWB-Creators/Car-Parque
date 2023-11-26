@@ -8,7 +8,7 @@ console.log(show)
 </script>
 <Navbar />
 <div class="flex flex-row justify-center overflow-hidden"> 
-    <img class="rounded-b-lg" src="Paragon.jpg" alt="">
+    <img class="rounded-b-lg" src="Siam Paragon.png" alt="">
 </div>
 <div class="font-bold text-[40px] text-center ">Paragon</div>   
 
