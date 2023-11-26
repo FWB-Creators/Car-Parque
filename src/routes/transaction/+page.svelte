@@ -1,5 +1,12 @@
 <script>
   import Navbar from '../../component/Navbar.svelte'
+  import { localStorageStore } from '../../localStorageStore.js'
+
+  const name = localStorageStore.getItem('name')
+  const floor = localStorageStore.getItem('floor')
+  const start_time = localStorageStore.getItem('start_time')
+  const end_time = localStorageStore.getItem('end_time')
+  const date = localStorageStore.getItem('date')
 </script>
 
 <Navbar />
@@ -9,7 +16,7 @@
     <div class=" text-lg text-left font-medium text-black text-opacity-60">
       Parking Area :
     </div>
-    <div class=" text-lg font-medium text-right right-2">Paragon</div>
+    <div class=" text-lg font-medium text-right right-2">{name}</div>
   </div>
   <div class="grid grid-cols-2 py-3 p-1 w-[100%]">
     <div class="text-lg text-left font-medium text-black text-opacity-60">
@@ -29,7 +36,7 @@
     <div class="text-lg text-left font-medium text-black text-opacity-60">
       Date :
     </div>
-    <div class=" text-lg font-medium text-right right-2">November 26, 2023</div>
+    <div class=" text-lg font-medium text-right right-2">{date}</div>
   </div>
   <div class="grid grid-cols-2 py-3 p-1 w-[100%]">
     <div class="text-lg text-left font-medium text-black text-opacity-60">
@@ -42,7 +49,7 @@
       Hours :
     </div>
     <div class=" text-lg font-medium text-right right-2">
-      10:00 AM - 12:00 PM
+      {start_time} - {end_time} Hours
     </div>
   </div>
 </div>
@@ -94,11 +101,13 @@
       </div>
     </div>
     <div class="flex-1 flex items-center justify-end">
-      <button
-        class="mr-4 font-semibold text-gray-800 underline focus:outline-none focus:text-gray-500"
-      >
-        Change
-      </button>
+      <a href="/payment">
+        <button
+          class="mr-4 font-semibold text-gray-800 underline focus:outline-none focus:text-gray-500"
+        >
+          Change
+        </button>
+      </a>
     </div>
   </div>
 </div>

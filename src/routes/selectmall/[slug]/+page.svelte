@@ -107,6 +107,7 @@
     <div class="ml-2 font-bold">3rd</div>
     <div class=" font-bold right-2">{results[2]}</div>
   </a>
+
   <!-- <div class="grid grid-cols-2 bg-gray-100 text-center border-b-2 mx-4 py-3">
     <div class="ml-2 font-bold">4th</div>
     <div class=" font-bold right-2">7</div>
@@ -179,4 +180,13 @@
       </div>
     </div>
   </div>
+</div>
+<div class="flex justify-center items-center">
+  <a href="/reserve">
+    <button
+      class=" bg-black mt-4 hover:bg-opacity-50 text-white font-bold py-2 px-16 rounded focus:outline-none focus:ring focus:bg-opacity-80"
+    >
+      Reserve
+    </button>
+  </a>
 </div>

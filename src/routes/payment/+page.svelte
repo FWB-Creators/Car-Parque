@@ -55,16 +55,17 @@
       + &nbsp;&nbsp; Add New Payment
     </div>
   </div>
-
-  <button
-    class="flex flex-row rounded-lg border absolute bottom-[15px] bg-black h-14 w-[23.5rem] mt-5 ml-5 mr-5 focus:outline-none focus:ring focus:bg-opacity-80"
-  >
-    <div
-      class="h-[100%] w-[100%] font-bold text-white flex items-center justify-center text-xl"
+  <a href="/transaction">
+    <button
+      class="flex flex-row rounded-lg border absolute bottom-[15px] bg-black h-14 w-[23.5rem] mt-5 ml-5 mr-5 focus:outline-none focus:ring focus:bg-opacity-80"
     >
-      Continue
-    </div>
-  </button>
+      <div
+        class="h-[100%] w-[100%] font-bold text-white flex items-center justify-center text-xl"
+      >
+        Continue
+      </div>
+    </button>
+  </a>
 </div>
 
 <!-- <div>
