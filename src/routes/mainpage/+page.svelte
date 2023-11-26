@@ -93,7 +93,7 @@
             <a
               class="ml-2 font-medium"
               on:click={() => sendDataToPage(name)}
-              href="/parkingpage/{name}">{name}</a
+              href="/selectmall/{name}">{name}</a
             >
             <div class="absolute right-2">
               {distanceInKm.toFixed(2)} km
