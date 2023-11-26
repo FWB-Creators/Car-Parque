@@ -37,8 +37,8 @@
 {#if isDataLoaded}
   <div class="block">
     <div>
-      <div class="font-bold text-xl text-center mb-6">{value}</div>
-      <div class="relative h-[26rem]">
+      <div class="font-bold text-[36px] text-center mb-6">{value}</div>
+      <div class="relative h-[26rem] my-10 mx-2">
         <div class="absolute left-4">
           <ParkSlot data={parkSlot.slice(0, 11)} />
         </div>
@@ -57,9 +57,9 @@
   </div>
 {/if}
 <div class="relative mx-4 h-24 rounded bg-black text-white">
-  <div class="absolute left-4 top-4 text-xl font-bold">Floor</div>
-  <div class="absolute left-4 top-12 text-xl font-bold">{floor}</div>
-  <div class="absolute right-4 top-4 text-xl font-bold">Avaliable Slot</div>
-  <div class="absolute right-4 top-12 text-xl font-bold">{avaliable}</div>
+  <div class="absolute left-4 top-4 text-lg font-bold">Floor</div>
+  <div class="absolute left-4 top-12 text-[16px] font-bold">{floor}</div>
+  <div class="absolute right-4 top-4 text-lg font-bold">Avaliable Slot</div>
+  <div class="absolute right-4 top-12 text-[16px] font-bold">{avaliable}</div>
 </div>
-<div class="mt-8 text-center">Last Updated: 10 mins ago.</div>
+<div class="mt-8 text-center text-gray-600">Last Updated: 10 mins ago.</div>

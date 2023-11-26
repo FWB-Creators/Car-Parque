@@ -3,6 +3,9 @@
   import { onMount } from 'svelte'
   import { localStorageStore } from '../../../localStorageStore.js'
 
+  let imgUrl = localStorageStore.getItem('name')
+  imgUrl = '../' + imgUrl + '.png'
+  console.log('img ', imgUrl)
   let isDataLoaded = false
   let show = false
   let avaliable = 0
@@ -65,9 +68,11 @@
 
 <Navbar />
 <div class="flex flex-row justify-center overflow-hidden">
-  <img class="rounded-b-lg" src="Paragon.jpg" alt="" />
+  <div class="max-h-60">
+    <img class="rounded-b-lg" src={imgUrl} alt="" />
+  </div>
 </div>
-<div class="font-bold text-[40px] text-center">{value}</div>
+<div class="mt-6 font-bold text-[36px] text-center">{value}</div>
 
 <!-- <div class="bg-gray-400 p-2 grid grid-cols-2">
     <div class="inline-block ">One</div>
@@ -159,16 +164,16 @@
         </div>
       </div>
       <div>
-        <p class="font-bold mt-3">Social Media:</p>
-        <div class="flex flex-row">
+        <p class="font-bold mt-3">Contact & Social Media:</p>
+        <div class="flex flex-row mt-2">
           <div class="flex flex-row mr-3">
-            <img class="h-6 w-6" src="facebook.png" alt="" />
+            <img class="h-6 w-6" src="../facebook.png" alt="" />
           </div>
           <div class="flex flex-row mr-3">
-            <img class="h-6 w-6" src="instagram.png" alt="" />
+            <img class="h-6 w-6" src="../instagram.png" alt="" />
           </div>
           <div class="flex flex-row mr-3">
-            <img class="h-6 w-6" src="twitter.png" alt="" />
+            <img class="h-6 w-6" src="../twitter.png" alt="" />
           </div>
         </div>
       </div>

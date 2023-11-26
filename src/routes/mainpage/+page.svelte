@@ -7,16 +7,6 @@
   let loading = true
   let passingDataLoading = true
   let newData = []
-  let mockStore = [
-    { name: 'Central', status: '' },
-    { name: 'Big C', status: '' },
-    { name: 'Tesco Lotus', status: '' },
-    { name: 'Makro', status: '' },
-    { name: 'HomePro', status: '' },
-    { name: 'Robinson', status: '' },
-    { name: 'Mega Bangna', status: '' },
-    { name: 'Mega Bangyai', status: '' },
-  ]
 
   const mockStatus = ['Moderate', 'High', 'Low']
 
@@ -46,9 +36,9 @@
   let isReady = false
 
   onMount(async () => {
-    mockStore.forEach((store) => {
-      store.status = randomStatus()
-    })
+    // mockStore.forEach((store) => {
+    //   store.status = randomStatus()
+    // })
     // const dataMall = await fetch('Mall.json')
     // const data = await dataMall.json()
     // data.forEach((mall) => {
