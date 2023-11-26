@@ -2,7 +2,7 @@
     import Navbar from '../../component/Navbar.svelte'
 </script>
 <Navbar />
-<div class="font-bold text-[40px] text-center mt-3">
+<div class="font-bold text-[36px] text-center mt-3">
     Reservation
 </div>
 <div class=" flex flex-col justify-center items-center">
@@ -23,8 +23,9 @@
     </button>
 </div>
 
+<div class="mt-10 text-[20px] font-bold ml-6 mb-3">Date & Time Selection</div>
 <div class ="flex flex-row justify-center">
-<div class="grid grid-cols-3 divide-x border-2 rounded border-gray-400  w-full mx-6 my-10 py-10">
+<div class="grid grid-cols-3 divide-x border-2 rounded border-gray-400   w-full mx-6 mb-10 py-3">
 
     <div class="text-center">
         <select>
