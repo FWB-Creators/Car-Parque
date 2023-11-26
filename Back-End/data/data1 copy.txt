@@ -1,0 +1,2 @@
+Q: Carparque Penalty system
+A: In the event that a customer exceeds the allotted time for their reserved parking slot, they will be subject to a penalty equal to the full hourly rental rate. Furthermore, you will get banned from the reservation system, the duration of the suspension will increase with each subsequent violation: first violation - 3 days, second violation - 7 days, third violation - 1 month
