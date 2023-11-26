@@ -12,7 +12,7 @@
 <input type="password" class="shadow appearance-none ml-7 mt-2 border rounded w-[22rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="****************">
 <div class="text-black text-opacity-40 text-right mr-8 underline mt-1 hover:opacity-50 ">Forget Password?</div>
 <div class="relative w-full">
-    <input id="link-checkbox" type="checkbox" class=" absolute top-0 left-7 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <input id="link-checkbox" type="checkbox" class=" absolute top-0 left-7 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded  focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
     <label for="link-checkbox" class="absolute left-14 top-2 transform -translate-y-1/2">Remember me</label>
 </div>
 <div class="mt-16 flex justify-center">
